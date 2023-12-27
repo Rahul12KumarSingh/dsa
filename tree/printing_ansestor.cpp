@@ -37,7 +37,6 @@ void solve()
 
              adj[u].push_back(v);
              adj[v].push_back(u);
-
            }
 
         dfs(1 ,0);
