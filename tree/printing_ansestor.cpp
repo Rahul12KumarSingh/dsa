@@ -15,9 +15,7 @@ int Par[N] ;
 
 void dfs(int curr , int par)
        {
-          cout<<curr<<" ";
           Par[curr] = par ;
-
           for(auto it : adj[curr])
             {
                 if(it != par)
@@ -48,19 +46,18 @@ void solve()
           {
             int node = Par[i] ;
 
-           cout<<"ansector of"<<i<<" : ";
+           cout<<"ansector of "<<i<<" : ";
             while (node != 0)
             {
               cout<<node<<" ";
                node = Par[node];         
-            }
-            
+            }      
             cout<<endl;
-          }
-
-        
+          }  
         return ;
      }
+
+     
 
 int main()
   {
